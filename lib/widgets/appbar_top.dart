@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hmsflutter/main.dart';
 
 class AppBarWidget extends StatefulWidget {
-  const AppBarWidget({Key? key, required Column child}) : super(key: key);
+  // const AppBarWidget({Key? key, required Column child}) : super(key: key);
 
   @override
   State<AppBarWidget> createState() => _AppBarWidgetState();
@@ -14,6 +14,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
     {
       return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: Text("Hospital"),
           titleSpacing: 10,
           //  centerTitle: true,
@@ -23,24 +24,14 @@ class _AppBarWidgetState extends State<AppBarWidget> {
           actions: [
             IconButton(
                 onPressed: () {
-                  mySnakeBar("Click Comment Icon", context);
-                },
-                icon: Icon(Icons.comment)),
-            IconButton(
-                onPressed: () {
                   mySnakeBar("Click Search Icon", context);
                 },
                 icon: Icon(Icons.search)),
             IconButton(
                 onPressed: () {
-                  mySnakeBar("Click Setting Icon", context);
+                  mySnakeBar("Click Logout Icon", context);
                 },
-                icon: Icon(Icons.settings)),
-            IconButton(
-                onPressed: () {
-                  mySnakeBar("Click Email Icon", context);
-                },
-                icon: Icon(Icons.email)),
+                icon: Icon(Icons.logout)),
           ],
         ),
       );

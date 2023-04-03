@@ -98,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => NavBarRoots()));
+                                  builder: (context) => HomeScreen()));
                         },
                         child: Padding(
                           padding: EdgeInsets.symmetric(
